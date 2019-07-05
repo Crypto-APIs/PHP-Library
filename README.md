@@ -12,7 +12,7 @@
 ## Install
 
 ```sh
-$ composer global require cryptoapis.io/php-sdk
+$ composer require cryptoapis.io/php-sdk
 $ composer install
 ```
 
