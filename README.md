@@ -50,95 +50,107 @@ Check out [CryptoAPIs documentation](https://docs.cryptoapis.io) for more inform
 
 /*
  * https://docs.cryptoapis.io/#list-all-exchanges
- * $exchanges = $instance->exchanges()->get(0,50);
  */
+ 
+ $exchanges = $instance->exchanges()->get(0,50);
 
 
 /*
  * https://docs.cryptoapis.io/#list-all-assets
- * $assets = $instance->assets()->get(0,50);
  */
+ 
+ $assets = $instance->assets()->get(0,50);
 
 
 /*
  * https://docs.cryptoapis.io/#list-all-symbols
- * $symbols = $instance->symbols()->get(0,50);
  */
+ 
+ $symbols = $instance->symbols()->get(0,50);
 
 
 /*
  * https://docs.cryptoapis.io/#get-specific-rate
- * $specificRate = $instance->specificRate()->get('5b1ea92e584bf50020130616','5b1ea92e584bf50020130615');
  */
+ 
+$specificRate = $instance->specificRate()->get('5b1ea92e584bf50020130616','5b1ea92e584bf50020130615');
 
 /*
  * https://docs.cryptoapis.io/#get-all-current-rates
- * $allCurrentRate = $instance->allCurrentRates()->get('5b1ea92e584bf50020130616');
  */
+ 
+$allCurrentRate = $instance->allCurrentRates()->get('5b1ea92e584bf50020130616');
 
 /*
  * https://docs.cryptoapis.io/#get-all-current-rates
- * $specificRateInExchange = $instance->specificRateInExchange()->get();
  */
+ 
+$specificRateInExchange = $instance->specificRateInExchange()->get();
 
 
 /*
  * https://docs.cryptoapis.io/#get-all-current-rates-in-a-specific-exchange
- * $allCurrentRatesInExchange = $instance->allCurrentRatesInExchange()->get();
  */
+ 
+$allCurrentRatesInExchange = $instance->allCurrentRatesInExchange()->get();
 
 
 /*
  * https://docs.cryptoapis.io/#list-all-periods
- * $listAllPeriods = $instance->listAllPeriodsOHLCV()->get();
  */
+ 
+ $listAllPeriods = $instance->listAllPeriodsOHLCV()->get();
 
 
 /*
  * https://docs.cryptoapis.io/#latest-data
- * $latestDataOHLCV = $instance->latestDataOHLCV()->get();
  */
+ 
+ $latestDataOHLCV = $instance->latestDataOHLCV()->get();
 
 /*
  * https://docs.cryptoapis.io/#historical-data
- * $historicalDataOHLCV = $instance->historicalDataOHLCV()->get();
  */
+ 
+ $historicalDataOHLCV = $instance->historicalDataOHLCV()->get();
 
 /*
  * https://docs.cryptoapis.io/#trades-latest-data
- * $trades = $instance->latestDataTrades()->get(10);
  */
+ $trades = $instance->latestDataTrades()->get(10);
 
 /*
  * https://docs.cryptoapis.io/#trades-latest-data-by-symbol
- * $tradesBySymbol = $instance->latestDataBySymbolTrades()->get();
  */
+ $tradesBySymbol = $instance->latestDataBySymbolTrades()->get();
 
 /*
  * https://docs.cryptoapis.io/#trades-historical-data
- * $historicalData = $instance->historicalDataTrades()->get();
  */
+ 
+ $historicalData = $instance->historicalDataTrades()->get();
 
 /*
  * https://docs.cryptoapis.io/#quotes-latest-data
- * $quotes = $instance->latestDataQuotes()->get(10);
  */
+ $quotes = $instance->latestDataQuotes()->get(10);
 
 /*
  * https://docs.cryptoapis.io/#quotes-historical-data
- * $quotesHistoricalData = $instance->historicalDataQuotes()->get('SYMBOL_ID_STRING');
  */
+ 
+ $quotesHistoricalData = $instance->historicalDataQuotes()->get('SYMBOL_ID_STRING');
 
 /*
  * https://docs.cryptoapis.io/#arbitrage
- * $arbitrage = $instance->arbitrage()->get();
  */
-
+$arbitrage = $instance->arbitrage()->get();
 
 /*
  * https://docs.cryptoapis.io/#btc-blockchain-chain-endpoint
- * $info = $instance->blockChainApiBtcChain()->get(Constants::$BTC_TESTNET);
  */
+ 
+$info = $instance->blockChainApiBtcChain()->get(Constants::$BTC_TESTNET);
 
 /*
  * https://docs.cryptoapis.io/#btc-blockchain-block-hash-endpoint
