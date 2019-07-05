@@ -1,0 +1,23 @@
+{
+    "name": "cryptoapis.io/php-sdk",
+    "description": "Crypto APIs is a trusted API provider for crypto & blockchain applications. We provide live and historical data for both Crypto market and Blockchain protocols.",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "6.*",
+        "php": ">=5.3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RestApis\\": "src/RestApis",
+            "Common\\": "src/Common"
+        }
+    },
+    "authors": [
+        {
+            "name": "CryptoAPIs PHP SDK",
+            "email": "bizdev@cryptoapis.io"
+        }
+    ],
+    "minimum-stability": "dev"
+}
