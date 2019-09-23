@@ -1,6 +1,6 @@
 <?php
 
-namespace RestApis\Blockchain\LTC\TransactionApi;
+namespace RestApis\Blockchain\LTC\TransactionAPI;
 
 use Common\Response;
 use RestApis\Blockchain\LTC\Common;

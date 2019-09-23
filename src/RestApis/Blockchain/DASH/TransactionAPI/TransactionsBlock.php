@@ -1,6 +1,6 @@
 <?php
 
-namespace RestApis\Blockchain\DASH\TransactionApi;
+namespace RestApis\Blockchain\DASH\TransactionAPI;
 
 use Common\Response;
 use RestApis\Blockchain\DASH\Common;
