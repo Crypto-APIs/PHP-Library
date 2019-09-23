@@ -1,6 +1,6 @@
 <?php
 
-namespace RestApis\Blockchain\BTC\TransactionApi;
+namespace RestApis\Blockchain\BTC\TransactionAPI;
 
 use Common\Response;
 use RestApis\Blockchain\BTC\Common;
