@@ -9,7 +9,7 @@ use \RestApis\Blockchain\Constants;
 /*
  * You can get api key from https://dashboard.cryptoapis.io/register
  */
-$apiKey = 'YOUR_API_KEY';
+$apiKey = 'c64c870e847484110db765f3baf5c624b2251662';
 
 /*create instance*/
 $instance = new \RestApis\Factory($apiKey);
@@ -327,6 +327,79 @@ $result = $instance->transactionApiBtcNewTransactionHdWallet()->create(Constants
  */
 
 
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/exchange-accounts/index#create-account
+ * $result = $instance->tradingApisExchangeAccount()->create('binance','fasdfasgeag4gsee4vgsebgse4bbge4sbgsg4segs4e623676rhdht456589857f','fasdfasgeag4gsee4vgsebgse4bbge4sbgsg4segs4e623676rhdht456589857f','fasdfasgeag4gsee4vgsebgse4bbge4sbgsg4segs4e623676rhdht456589857f','asdsad');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/exchange-accounts/index#list-all-accounts
+ * $result = $instance->tradingApisExchangeAccount()->listAll();
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/exchange-accounts/index#get-account
+ * $result = $instance->tradingApisExchangeAccount()->get('ebf4cbbf-3759-4b63-84c1-01bcf508317c');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/exchange-accounts/index#update-account
+ * $result = $instance->tradingApisExchangeAccount()->update('ebf4cbbf-3759-4b63-84c1-01bcf508317c','binance','fasdfasgeag4gsee4vgsebgse4bbge4sbgsg4segs4e623676rhdht456589857f','fasdfasgeag4gsee4vgsebgse4bbge4sbgsg4segs4e623676rhdht456589857f','fasdfasgeag4gsee4vgsebgse4bbge4sbgsg4segs4e623676rhdht456589857f','asdsad');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/exchange-accounts/index#replace-account
+ * $result = $instance->tradingApisExchangeAccount()->replace('ebf4cbbf-3759-4b63-84c1-01bcf508317c','binance','fasdfasgeag4gsee4vgsebgse4bbge4sbgsg4segs4e623676rhdht456589857f','fasdfasgeag4gsee4vgsebgse4bbge4sbgsg4segs4e623676rhdht456589857f','fasdfasgeag4gsee4vgsebgse4bbge4sbgsg4segs4e623676rhdht456589857f','asdsad');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/exchange-accounts/index#delete-account
+ * $result = $instance->tradingApisExchangeAccount()->delete('ebf4cbbf-3759-4b63-84c1-01bcf508317c');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/private-apis/index#list-all-exchanges
+ * $result = $instance->tradingApisPrivate()->listAll();
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/private-apis/index#balance
+ * $result = $instance->tradingApisPrivate()->getBalance('ebf4cbbf-3759-4b63-84c1-01bcf508317c');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/private-apis/index#get-deposit-address
+ * $result = $instance->tradingApisPrivate()->getDepositAddress('ebf4cbbf-3759-4b63-84c1-01bcf508317c','dasd');
+ */
+
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/private-apis/index#get-my-trades
+ * $result = $instance->tradingApisPrivate()->getMyTrades('ebf4cbbf-3759-4b63-84c1-01bcf508317c');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/private-apis/index#get-open-orders
+ * $result = $instance->tradingApisPrivate()->getOpenOrders('ebf4cbbf-3759-4b63-84c1-01bcf508317c');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/private-apis/index#create-order
+ * $result = $instance->tradingApisPrivate()->createOrder('ebf4cbbf-3759-4b63-84c1-01bcf508317c','btc/eth','market','buy',123,123);
+ */
+
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/private-apis/index#cancel-order
+ * $result = $instance->tradingApisPrivate()->cancelOrder('ebf4cbbf-3759-4b63-84c1-01bcf508317c','asd','btc/eth');
+ */
+
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/private-apis/index#withdraw
+ * $result = $instance->tradingApisPrivate()->withdraw('account_id','code','123','address');
+ */
 
 
 

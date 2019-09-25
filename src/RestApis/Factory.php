@@ -2114,4 +2114,20 @@ class Factory
         return $this->getInstance($className);
     }
 
+    /**
+     * @return \RestApis\TradingApis\ExchangeAccounts\Account
+     */
+    public function tradingApisExchangeAccount() {
+        $className = 'RestApis\\TradingApis\\ExchangeAccounts\\Account';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\TradingApis\PrivateApis\PrivateApis
+     */
+    public function tradingApisPrivate() {
+        $className = 'RestApis\\TradingApis\\PrivateApis\\PrivateApis';
+        return $this->getInstance($className);
+    }
+
 }
