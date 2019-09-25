@@ -9,7 +9,7 @@ use \RestApis\Blockchain\Constants;
 /*
  * You can get api key from https://dashboard.cryptoapis.io/register
  */
-$apiKey = 'c64c870e847484110db765f3baf5c624b2251662';
+$apiKey = 'YOUR_API_KEY';
 
 /*create instance*/
 $instance = new \RestApis\Factory($apiKey);
