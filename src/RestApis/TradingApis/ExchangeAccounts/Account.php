@@ -21,20 +21,20 @@ class Account extends Request {
     {
         $params = [
             'url' => $this->getEndPoint(),
-            'exchange_id' => $exchange_id,
-            'exchange_api_key' => $exchange_api_key
+            'exchangeId' => $exchange_id,
+            'exchangeApiKey' => $exchange_api_key
         ];
 
         if(!is_null($exchange_secret)) {
-            $params['exchange_secret'] = $exchange_secret;
+            $params['exchangeSecret'] = $exchange_secret;
         }
 
         if(!is_null($exchange_password)) {
-            $params['exchange_password'] = $exchange_password;
+            $params['exchangePassword'] = $exchange_password;
         }
 
         if(!is_null($exchange_uid)) {
-            $params['exchange_uid'] = $exchange_uid;
+            $params['exchangeUid'] = $exchange_uid;
         }
 
         return (new Response(
@@ -90,23 +90,23 @@ class Account extends Request {
         $params = [];
 
         if(!is_null($exchange_id)) {
-            $params['exchange_id'] = $exchange_id;
+            $params['exchangeId'] = $exchange_id;
         }
 
         if(!is_null($exchange_api_key)) {
-            $params['exchange_api_key'] = $exchange_api_key;
+            $params['exchangeApiKey'] = $exchange_api_key;
         }
 
         if(!is_null($exchange_secret)) {
-            $params['exchange_secret'] = $exchange_secret;
+            $params['exchangeSecret'] = $exchange_secret;
         }
 
         if(!is_null($exchange_password)) {
-            $params['exchange_password'] = $exchange_password;
+            $params['exchangePassword'] = $exchange_password;
         }
 
         if(!is_null($exchange_uid)) {
-            $params['exchange_uid'] = $exchange_uid;
+            $params['exchangeUid'] = $exchange_uid;
         }
 
         return (new Response(
@@ -129,20 +129,20 @@ class Account extends Request {
     public function replace($account_id, $exchange_id, $exchange_api_key, $exchange_secret = null, $exchange_password = null, $exchange_uid = null)
     {
         $params = [
-            'exchange_id' => $exchange_id,
-            'exchange_api_key' => $exchange_api_key
+            'exchangeId' => $exchange_id,
+            'exchangeApiKey' => $exchange_api_key
         ];
 
         if(!is_null($exchange_secret)) {
-            $params['exchange_secret'] = $exchange_secret;
+            $params['exchangeSecret'] = $exchange_secret;
         }
 
         if(!is_null($exchange_password)) {
-            $params['exchange_password'] = $exchange_password;
+            $params['exchangePassword'] = $exchange_password;
         }
 
         if(!is_null($exchange_uid)) {
-            $params['exchange_uid'] = $exchange_uid;
+            $params['exchangeUid'] = $exchange_uid;
         }
 
 
