@@ -15,7 +15,7 @@ class PendingTransactions extends Common {
      * @return \stdClass
      */
 
-    public function get($network, $limit)
+    public function get($network, $limit = 50)
     {
         $this->network = $network;
 

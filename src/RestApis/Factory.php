@@ -188,6 +188,15 @@ class Factory
     }
 
     /**
+     * @return \RestApis\CryptoMarketData\OrderBook\SnapshotBySymbol
+     */
+    public function snapshotBySymbol()
+    {
+        $className = 'RestApis\\CryptoMarketData\\OrderBook\\SnapshotBySymbol';
+        return $this->getInstance($className);
+    }
+
+    /**
      * @return \RestApis\Blockchain\BTC\BlockchainAPI\Chain
      */
     public function blockChainApiBtcChain() {
@@ -259,6 +268,16 @@ class Factory
         return $this->getInstance($className);
     }
 
+
+    /**
+     * @return \RestApis\Blockchain\BTC\AddressAPI\MultipleAddresses
+     */
+    public function addressApiBtcMultipleAddressesInfo() {
+
+        $className = 'RestApis\\Blockchain\\BTC\\AddressAPI\\AddressTransactions';
+        return $this->getInstance($className);
+    }
+
     /**
      * @return \RestApis\Blockchain\BTC\WalletAPI\CreateWallet
      */
@@ -319,6 +338,42 @@ class Factory
     public function walletApiBtcDeleteWallet() {
 
         $className = 'RestApis\\Blockchain\\BTC\\WalletAPI\\DeleteWallet';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BTC\WalletAPI\CreateXPUB
+     */
+    public function walletApiBtcCreateXPub() {
+
+        $className = 'RestApis\\Blockchain\\BTC\\WalletAPI\\CreateXPUB';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BTC\WalletAPI\GetExtendedPublicKeyTxs
+     */
+    public function walletApiBtcGetExtendedPublicKeyTxs() {
+
+        $className = 'RestApis\\Blockchain\\BTC\\WalletAPI\\GetExtendedPublicKeyTxs';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BTC\WalletAPI\GetPublicExtendedKeyAddresses
+     */
+    public function walletApiBtcGetPublicExtendedKeyAddresses() {
+
+        $className = 'RestApis\\Blockchain\\BTC\\WalletAPI\\GetPublicExtendedKeyAddresses';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BTC\WalletAPI\ImportAddressAsWallet
+     */
+    public function walletApiBtcImportAddressAsWallet() {
+
+        $className = 'RestApis\\Blockchain\\BTC\\WalletAPI\\ImportAddressAsWallet';
         return $this->getInstance($className);
     }
 
@@ -414,6 +469,24 @@ class Factory
     }
 
     /**
+     * @return \RestApis\Blockchain\BTC\TransactionApi\TransactionSize
+     */
+    public function transactionApiBtcTransactionSize() {
+
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\TransactionSize';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BTC\TransactionApi\RefundTransaction
+     */
+    public function transactionApiBtcRefundTransaction() {
+
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\RefundTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
      * @return \RestApis\Blockchain\BTC\PaymentForwarding\CreatePaymentForwarding
      */
     public function paymentForwardingBtcCreatePayment() {
@@ -503,6 +576,15 @@ class Factory
         return $this->getInstance($className);
     }
 
+    /**
+     * @return \RestApis\Blockchain\BTC\WebhookNotification\DeleteAllWebhooks
+     */
+    public function webhookBtcDeleteAllWebhooks() {
+
+        $className = 'RestApis\\Blockchain\\BTC\\WebhookNotification\\DeleteAllWebhooks';
+        return $this->getInstance($className);
+    }
+
 
 
 
@@ -583,6 +665,15 @@ class Factory
     }
 
     /**
+     * @return \RestApis\Blockchain\LTC\AddressAPI\MultipleAddresses
+     */
+    public function addressApiLtcMultipleAddressesInfo() {
+
+        $className = 'RestApis\\Blockchain\\LTC\\AddressAPI\\AddressTransactions';
+        return $this->getInstance($className);
+    }
+
+    /**
      * @return \RestApis\Blockchain\LTC\WalletAPI\CreateWallet
      */
     public function walletApiLtcCreateAddress() {
@@ -642,6 +733,42 @@ class Factory
     public function walletApiLtcDeleteWallet() {
 
         $className = 'RestApis\\Blockchain\\LTC\\WalletAPI\\DeleteWallet';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\LTC\WalletAPI\CreateXPUB
+     */
+    public function walletApiLtcCreateXPub() {
+
+        $className = 'RestApis\\Blockchain\\LTC\\WalletAPI\\CreateXPUB';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\LTC\WalletAPI\GetExtendedPublicKeyTxs
+     */
+    public function walletApiLtcGetExtendedPublicKeyTxs() {
+
+        $className = 'RestApis\\Blockchain\\LTC\\WalletAPI\\GetExtendedPublicKeyTxs';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\LTC\WalletAPI\GetPublicExtendedKeyAddresses
+     */
+    public function walletApiLtcGetPublicExtendedKeyAddresses() {
+
+        $className = 'RestApis\\Blockchain\\LTC\\WalletAPI\\GetPublicExtendedKeyAddresses';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\LTC\WalletAPI\ImportAddressAsWallet
+     */
+    public function walletApiLtcImportAddressAsWallet() {
+
+        $className = 'RestApis\\Blockchain\\LTC\\WalletAPI\\ImportAddressAsWallet';
         return $this->getInstance($className);
     }
 
@@ -737,6 +864,24 @@ class Factory
     }
 
     /**
+     * @return \RestApis\Blockchain\LTC\TransactionApi\TransactionSize
+     */
+    public function transactionApiLtcTransactionSize() {
+
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\TransactionSize';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\LTC\TransactionApi\RefundTransaction
+     */
+    public function transactionApiLtcRefundTransaction() {
+
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\RefundTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
      * @return \RestApis\Blockchain\LTC\PaymentForwarding\CreatePaymentForwarding
      */
     public function paymentForwardingLtcCreatePayment() {
@@ -826,6 +971,14 @@ class Factory
         return $this->getInstance($className);
     }
 
+    /**
+     * @return \RestApis\Blockchain\LTC\WebhookNotification\DeleteAllWebhooks
+     */
+    public function webhookLtcDeleteAllWebhooks() {
+
+        $className = 'RestApis\\Blockchain\\LTC\\WebhookNotification\\DeleteAllWebhooks';
+        return $this->getInstance($className);
+    }
 
 
 
@@ -833,11 +986,11 @@ class Factory
 
 
     /**
-     * @return \RestApis\Blockchain\BCH\BlockchainAPI\Chain
+     * @return \RestApis\Blockchain\BCH\BlockchainAPI\NodeInfo
      */
     public function blockChainApiBchChain() {
 
-        $className = 'RestApis\\Blockchain\\BCH\\BlockchainAPI\\Chain';
+        $className = 'RestApis\\Blockchain\\BCH\\BlockchainAPI\\NodeInfo';
         return $this->getInstance($className);
     }
 
@@ -905,6 +1058,15 @@ class Factory
     }
 
     /**
+     * @return \RestApis\Blockchain\BCH\AddressAPI\MultipleAddresses
+     */
+    public function addressApiBchMultipleAddressesInfo() {
+
+        $className = 'RestApis\\Blockchain\\BCH\\AddressAPI\\AddressTransactions';
+        return $this->getInstance($className);
+    }
+
+    /**
      * @return \RestApis\Blockchain\BCH\WalletAPI\CreateWallet
      */
     public function walletApiBchCreateAddress() {
@@ -964,6 +1126,42 @@ class Factory
     public function walletApiBchDeleteWallet() {
 
         $className = 'RestApis\\Blockchain\\BCH\\WalletAPI\\DeleteWallet';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BCH\WalletAPI\CreateXPUB
+     */
+    public function walletApiBchCreateXPub() {
+
+        $className = 'RestApis\\Blockchain\\BCH\\WalletAPI\\CreateXPUB';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BCH\WalletAPI\GetExtendedPublicKeyTxs
+     */
+    public function walletApiBchGetExtendedPublicKeyTxs() {
+
+        $className = 'RestApis\\Blockchain\\BCH\\WalletAPI\\GetExtendedPublicKeyTxs';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BCH\WalletAPI\GetPublicExtendedKeyAddresses
+     */
+    public function walletApiBchGetPublicExtendedKeyAddresses() {
+
+        $className = 'RestApis\\Blockchain\\BCH\\WalletAPI\\GetPublicExtendedKeyAddresses';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BCH\WalletAPI\ImportAddressAsWallet
+     */
+    public function walletApiBchImportAddressAsWallet() {
+
+        $className = 'RestApis\\Blockchain\\BCH\\WalletAPI\\ImportAddressAsWallet';
         return $this->getInstance($className);
     }
 
@@ -1059,6 +1257,24 @@ class Factory
     }
 
     /**
+     * @return \RestApis\Blockchain\BCH\TransactionApi\TransactionSize
+     */
+    public function transactionApiBchTransactionSize() {
+
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\TransactionSize';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BCH\TransactionApi\RefundTransaction
+     */
+    public function transactionApiBchRefundTransaction() {
+
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\RefundTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
      * @return \RestApis\Blockchain\BCH\PaymentForwarding\CreatePaymentForwarding
      */
     public function paymentForwardingBchCreatePayment() {
@@ -1148,6 +1364,15 @@ class Factory
         return $this->getInstance($className);
     }
 
+    /**
+     * @return \RestApis\Blockchain\BCH\WebhookNotification\DeleteAllWebhooks
+     */
+    public function webhookBchDeleteAllWebhooks() {
+
+        $className = 'RestApis\\Blockchain\\BCH\\WebhookNotification\\DeleteAllWebhooks';
+        return $this->getInstance($className);
+    }
+
 
 
 
@@ -1228,6 +1453,16 @@ class Factory
         return $this->getInstance($className);
     }
 
+
+    /**
+     * @return \RestApis\Blockchain\DOGE\AddressAPI\MultipleAddresses
+     */
+    public function addressApiDogeMultipleAddressesInfo() {
+
+        $className = 'RestApis\\Blockchain\\DOGE\\AddressAPI\\AddressTransactions';
+        return $this->getInstance($className);
+    }
+
     /**
      * @return \RestApis\Blockchain\DOGE\WalletAPI\CreateWallet
      */
@@ -1288,6 +1523,42 @@ class Factory
     public function walletApiDogeDeleteWallet() {
 
         $className = 'RestApis\\Blockchain\\DOGE\\WalletAPI\\DeleteWallet';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DOGE\WalletAPI\CreateXPUB
+     */
+    public function walletApiDogeCreateXPub() {
+
+        $className = 'RestApis\\Blockchain\\DOGE\\WalletAPI\\CreateXPUB';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DOGE\WalletAPI\GetExtendedPublicKeyTxs
+     */
+    public function walletApiDogeGetExtendedPublicKeyTxs() {
+
+        $className = 'RestApis\\Blockchain\\DOGE\\WalletAPI\\GetExtendedPublicKeyTxs';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DOGE\WalletAPI\GetPublicExtendedKeyAddresses
+     */
+    public function walletApiDogeGetPublicExtendedKeyAddresses() {
+
+        $className = 'RestApis\\Blockchain\\DOGE\\WalletAPI\\GetPublicExtendedKeyAddresses';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DOGE\WalletAPI\ImportAddressAsWallet
+     */
+    public function walletApiDogeImportAddressAsWallet() {
+
+        $className = 'RestApis\\Blockchain\\DOGE\\WalletAPI\\ImportAddressAsWallet';
         return $this->getInstance($className);
     }
 
@@ -1383,6 +1654,24 @@ class Factory
     }
 
     /**
+     * @return \RestApis\Blockchain\DOGE\TransactionApi\TransactionSize
+     */
+    public function transactionApiDogeTransactionSize() {
+
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\TransactionSize';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DOGE\TransactionApi\RefundTransaction
+     */
+    public function transactionApiDogeRefundTransaction() {
+
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\RefundTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
      * @return \RestApis\Blockchain\DOGE\PaymentForwarding\CreatePaymentForwarding
      */
     public function paymentForwardingDogeCreatePayment() {
@@ -1472,6 +1761,15 @@ class Factory
         return $this->getInstance($className);
     }
 
+    /**
+     * @return \RestApis\Blockchain\DOGE\WebhookNotification\DeleteAllWebhooks
+     */
+    public function webhookDogeDeleteAllWebhooks() {
+
+        $className = 'RestApis\\Blockchain\\DOGE\\WebhookNotification\\DeleteAllWebhooks';
+        return $this->getInstance($className);
+    }
+
 
 
 
@@ -1552,6 +1850,16 @@ class Factory
         return $this->getInstance($className);
     }
 
+
+    /**
+     * @return \RestApis\Blockchain\DASH\AddressAPI\MultipleAddresses
+     */
+    public function addressApiDashMultipleAddressesInfo() {
+
+        $className = 'RestApis\\Blockchain\\DASH\\AddressAPI\\AddressTransactions';
+        return $this->getInstance($className);
+    }
+
     /**
      * @return \RestApis\Blockchain\DASH\WalletAPI\CreateWallet
      */
@@ -1612,6 +1920,42 @@ class Factory
     public function walletApiDashDeleteWallet() {
 
         $className = 'RestApis\\Blockchain\\DASH\\WalletAPI\\DeleteWallet';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DASH\WalletAPI\CreateXPUB
+     */
+    public function walletApiDashCreateXPub() {
+
+        $className = 'RestApis\\Blockchain\\DASH\\WalletAPI\\CreateXPUB';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DASH\WalletAPI\GetExtendedPublicKeyTxs
+     */
+    public function walletApiDashGetExtendedPublicKeyTxs() {
+
+        $className = 'RestApis\\Blockchain\\DASH\\WalletAPI\\GetExtendedPublicKeyTxs';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DASH\WalletAPI\GetPublicExtendedKeyAddresses
+     */
+    public function walletApiDashGetPublicExtendedKeyAddresses() {
+
+        $className = 'RestApis\\Blockchain\\DASH\\WalletAPI\\GetPublicExtendedKeyAddresses';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DASH\WalletAPI\ImportAddressAsWallet
+     */
+    public function walletApiDashImportAddressAsWallet() {
+
+        $className = 'RestApis\\Blockchain\\DASH\\WalletAPI\\ImportAddressAsWallet';
         return $this->getInstance($className);
     }
 
@@ -1707,6 +2051,24 @@ class Factory
     }
 
     /**
+     * @return \RestApis\Blockchain\DASH\TransactionApi\TransactionSize
+     */
+    public function transactionApiDashTransactionSize() {
+
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\TransactionSize';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DASH\TransactionApi\RefundTransaction
+     */
+    public function transactionApiDashRefundTransaction() {
+
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\RefundTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
      * @return \RestApis\Blockchain\DASH\PaymentForwarding\CreatePaymentForwarding
      */
     public function paymentForwardingDashCreatePayment() {
@@ -1797,6 +2159,15 @@ class Factory
     }
 
 
+    /**
+     * @return \RestApis\Blockchain\DASH\WebhookNotification\DeleteAllWebhooks
+     */
+    public function webhookDashDeleteAllWebhooks() {
+
+        $className = 'RestApis\\Blockchain\\DASH\\WebhookNotification\\DeleteAllWebhooks';
+        return $this->getInstance($className);
+    }
+
 
 
 
@@ -1883,6 +2254,15 @@ class Factory
     }
 
     /**
+     * @return \RestApis\Blockchain\ETH\AddressAPI\MultipleAddresses
+     */
+    public function addressApiEthMultipleAddressesInfo() {
+
+        $className = 'RestApis\\Blockchain\\ETH\\AddressAPI\\AddressTransactions';
+        return $this->getInstance($className);
+    }
+
+    /**
      * @return \RestApis\Blockchain\ETH\TransactionApi\TransactionsHash
      */
     public function transactionApiEthTransactionHash() {
@@ -1939,7 +2319,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\EstimateGasSmartContract
+     * @return \RestApis\Blockchain\ETH\TransactionApi\EstimateTransactionGas
      */
     public function transactionApiEthEstimateTransactionGas() {
         $className = 'RestApis\\Blockchain\\ETH\\TransactionApi\\EstimateGasSmartContract';
@@ -1970,6 +2350,23 @@ class Factory
         return $this->getInstance($className);
     }
 
+    /**
+     * @return \RestApis\Blockchain\ETH\TransactionApi\RefundTransaction
+     */
+    public function transactionApiEthRefundTransaction() {
+
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\RefundTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETH\TransactionApi\InternalTransactions
+     */
+    public function transactionApiEthInternalTransactions() {
+
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\InternalTransactions';
+        return $this->getInstance($className);
+    }
 
     /**
      * @return \RestApis\Blockchain\ETH\ContractAPI\EstimateGasSmartContract
@@ -2012,9 +2409,25 @@ class Factory
     }
 
     /**
+     * @return \RestApis\Blockchain\ETH\TokenAPI\GetTokenSupplyAndDecimals
+     */
+    public function tokenApiEthGetTokenSupplyAndDecimals() {
+        $className = 'RestApis\\Blockchain\\ETH\\TokenAPI\\GetTokenSupplyAndDecimals';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETH\TokenAPI\TransferTokens
+     */
+    public function tokenApiEthTransferTokens() {
+        $className = 'RestApis\\Blockchain\\ETH\\TokenAPI\\TransferTokens';
+        return $this->getInstance($className);
+    }
+
+    /**
      * @return \RestApis\Blockchain\ETH\PaymentForwarding\CreatePaymentForwarding
      */
-    public function paymentForwardingEtcCreatePayment() {
+    public function paymentForwardingEthCreatePayment() {
         $className = 'RestApis\\Blockchain\\ETH\\PaymentForwarding\\CreatePaymentForwarding';
         return $this->getInstance($className);
     }
@@ -2022,7 +2435,7 @@ class Factory
     /**
      * @return \RestApis\Blockchain\ETH\PaymentForwarding\DeletePayments
      */
-    public function paymentForwardingEtcDeletePayment() {
+    public function paymentForwardingEthDeletePayment() {
         $className = 'RestApis\\Blockchain\\ETH\\PaymentForwarding\\DeletePayments';
         return $this->getInstance($className);
     }
@@ -2030,7 +2443,7 @@ class Factory
     /**
      * @return \RestApis\Blockchain\ETH\PaymentForwarding\ListPayments
      */
-    public function paymentForwardingEtcListPayments() {
+    public function paymentForwardingEthListPayments() {
         $className = 'RestApis\\Blockchain\\ETH\\PaymentForwarding\\ListPayments';
         return $this->getInstance($className);
     }
@@ -2038,7 +2451,7 @@ class Factory
     /**
      * @return \RestApis\Blockchain\ETH\PaymentForwarding\ListOfPastForward
      */
-    public function paymentForwardingEtcListOfPastPayments() {
+    public function paymentForwardingEthListOfPastPayments() {
         $className = 'RestApis\\Blockchain\\ETH\\PaymentForwarding\\ListOfPastForward';
         return $this->getInstance($className);
     }
@@ -2046,7 +2459,7 @@ class Factory
     /**
      * @return \RestApis\Blockchain\ETH\PaymentForwarding\DeletePayments
      */
-    public function paymentForwardingEtcDeletePayments() {
+    public function paymentForwardingEthDeletePayments() {
         $className = 'RestApis\\Blockchain\\ETH\\PaymentForwarding\\DeletePayments';
         return $this->getInstance($className);
     }
@@ -2130,4 +2543,470 @@ class Factory
         return $this->getInstance($className);
     }
 
+    /**
+     * @return \RestApis\Blockchain\ETH\WebhookNotification\DeleteAllWebhooks
+     */
+    public function webhookEthDeleteAllWebhooks() {
+
+        $className = 'RestApis\\Blockchain\\ETH\\WebhookNotification\\DeleteAllWebhooks';
+        return $this->getInstance($className);
+    }
+
+
+
+
+
+
+
+
+
+
+    //ETC
+
+    /**
+     * @return \RestApis\Blockchain\ETC\BlockchainAPI\Chain
+     */
+    public function blockChainApiEtcChain() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\BlockchainAPI\\Chain';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\BlockchainAPI\BlockHash
+     */
+    public function blockChainApiEtcBlockHash() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\BlockchainAPI\\BlockHash';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\BlockchainAPI\BlockHeight
+     */
+    public function blockChainApiEtcBlockHeight() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\BlockchainAPI\\BlockHeight';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\BlockchainAPI\LatestBlock
+     */
+    public function blockChainApiEtcLatestBlock() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\BlockchainAPI\\LatestBlock';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\AddressAPI\Address
+     */
+    public function addressApiEtcAddress() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\AddressAPI\\Address';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\AddressAPI\AddressTransactions
+     */
+    public function addressApiEtcAddressTransactions() {
+        $className = 'RestApis\\Blockchain\\ETC\\AddressAPI\\AddressTransactions';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\AddressAPI\GenerateAddress
+     */
+    public function addressApiEtcGenerateAddress() {
+        $className = 'RestApis\\Blockchain\\ETC\\AddressAPI\\GenerateAddress';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\AddressAPI\GenerateAccount
+     */
+    public function addressApiEtcGenerateAccount() {
+        $className = 'RestApis\\Blockchain\\ETC\\AddressAPI\\GenerateAccount';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\AddressAPI\Nonce
+     */
+    public function addressApiEtcNonce() {
+        $className = 'RestApis\\Blockchain\\ETC\\AddressAPI\\Nonce';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\AddressAPI\MultipleAddresses
+     */
+    public function addressApiEtcMultipleAddressesInfo() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\AddressAPI\\MultipleAddresses';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TransactionApi\TransactionsHash
+     */
+    public function transactionApiEtcTransactionHash() {
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\TransactionsHash';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TransactionApi\TransactionsIndexByIndex
+     */
+    public function transactionApiEtcTransactionsIndexByIndex() {
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\TransactionsIndexByIndex';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TransactionApi\TransactionsIndexByBlockNumber
+     */
+    public function transactionApiEtcTransactionsIndexByBlockNumber() {
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\TransactionsIndexByBlockNumber';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TransactionApi\TransactionsIndexByBlockHash
+     */
+    public function transactionApiEtcTransactionsIndexByBlockHash() {
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\TransactionsIndexByBlockHash';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TransactionApi\CreateTransaction
+     */
+    public function transactionApiEtcCreateTransaction() {
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\CreateTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TransactionApi\LocalSignTransaction
+     */
+    public function transactionApiEtcLocalSignTransaction() {
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\LocalSignTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TransactionApi\PushRawTransaction
+     */
+    public function transactionApiEtcPushRawTransaction() {
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\PushRawTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TransactionApi\PendingTransactions
+     */
+    public function transactionApiEtcPendingTransactions() {
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\PendingTransactions';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TransactionApi\QueuedTransactions
+     */
+    public function transactionApiEtcQueuedTransactions() {
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\QueuedTransactions';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TransactionApi\TransactionsFee
+     */
+    public function transactionApiEtcTransactionFee() {
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\TransactionsFee';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TransactionApi\RefundTransaction
+     */
+    public function transactionApiEtcRefundTransaction() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\RefundTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TransactionApi\EstimateTransactionGas
+     */
+    public function transactionApiEtcEstimateTransactionGas() {
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionApi\\EstimateGasSmartContract';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\ContractAPI\EstimateGasSmartContract
+     */
+    public function contractApiEtcEstimateGasSmartContract() {
+        $className = 'RestApis\\Blockchain\\ETC\\ContractAPI\\EstimateGasSmartContract';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\ContractAPI\DeploySmartContract
+     */
+    public function contractApiEtcDeploySmartContract() {
+        $className = 'RestApis\\Blockchain\\ETC\\ContractAPI\\DeploySmartContract';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TokenAPI\GetTokenBalance
+     */
+    public function tokenApiEtcGetTokenBalance() {
+        $className = 'RestApis\\Blockchain\\ETC\\TokenAPI\\GetTokenBalance';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TokenAPI\GetTokenSupplyAndDecimals
+     */
+    public function tokenApiEtcGetTokenSupplyAndDecimals() {
+        $className = 'RestApis\\Blockchain\\ETC\\TokenAPI\\GetTokenSupplyAndDecimals';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\TokenAPI\TransferTokens
+     */
+    public function tokenApiEtcTransferTokens() {
+        $className = 'RestApis\\Blockchain\\ETC\\TokenAPI\\TransferTokens';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\PaymentForwarding\CreatePaymentForwarding
+     */
+    public function paymentForwardingEtcCreatePayment() {
+        $className = 'RestApis\\Blockchain\\ETC\\PaymentForwarding\\CreatePaymentForwarding';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\PaymentForwarding\DeletePayments
+     */
+    public function paymentForwardingEtcDeletePayment() {
+        $className = 'RestApis\\Blockchain\\ETC\\PaymentForwarding\\DeletePayments';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\PaymentForwarding\ListPayments
+     */
+    public function paymentForwardingEtcListPayments() {
+        $className = 'RestApis\\Blockchain\\ETC\\PaymentForwarding\\ListPayments';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\PaymentForwarding\ListOfPastForward
+     */
+    public function paymentForwardingEtcListOfPastPayments() {
+        $className = 'RestApis\\Blockchain\\ETC\\PaymentForwarding\\ListOfPastForward';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\PaymentForwarding\DeletePayments
+     */
+    public function paymentForwardingEtcDeletePayments() {
+        $className = 'RestApis\\Blockchain\\ETC\\PaymentForwarding\\DeletePayments';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\WebhookNotification\CreateNewBlockWebhook
+     */
+    public function webhookEtcCreateNewBlock() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\WebhookNotification\\CreateNewBlockWebhook';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\WebhookNotification\CreateConfirmedTransactionWebhook
+     */
+    public function webhookEtcCreateConfirmedTransaction() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\WebhookNotification\\CreateConfirmedTransactionWebhook';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\WebhookNotification\CreateAddressTransactionWebhook
+     */
+    public function webhookEtcCreateAddressTransaction() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\WebhookNotification\\CreateAddressTransactionWebhook';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\WebhookNotification\CreateAddressTransactionWebhook
+     */
+    public function webhookEtcCreateTransactionConfirmations() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\WebhookNotification\\CreateAddressTransactionWebhook';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\WebhookNotification\ListWebhooks
+     */
+    public function webhookEtcListWebhooks() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\WebhookNotification\\ListWebhooks';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\WebhookNotification\DeleteWebhooks
+     */
+    public function webhookEtcDeleteWebhooks() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\WebhookNotification\\DeleteWebhooks';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\ETC\WebhookNotification\DeleteAllWebhooks
+     */
+    public function webhookEtcDeleteAllWebhooks() {
+
+        $className = 'RestApis\\Blockchain\\ETC\\WebhookNotification\\DeleteAllWebhooks';
+        return $this->getInstance($className);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    //Omni layer
+
+    /**
+     * @return \RestApis\Blockchain\Layers\OmniLayer\AddressAPI\Address
+     */
+    public function addressApiOmniLayerAddress() {
+
+        $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\AddressAPI\\Address';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\Layers\OmniLayer\AddressAPI\AddressTransactions
+     */
+    public function addressApiOmniLayerAddressTransactions() {
+
+        $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\AddressAPI\\AddressTransactions';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\Layers\OmniLayer\BlockchainAPI\NodeInfo
+     */
+    public function blockchainApiOmniLayerNodeInfo() {
+
+        $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\BlockchainAPI\\NodeInfo';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\Layers\OmniLayer\TransactionAPI\CreateTransaction
+     */
+    public function transactionApiOmniLayerCreateTransaction() {
+
+        $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\TransactionAPI\\CreateTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\Layers\OmniLayer\TransactionAPI\NewTransaction
+     */
+    public function transactionApiOmniLayerNewTransaction() {
+
+        $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\TransactionAPI\\NewTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\Layers\OmniLayer\TransactionAPI\NewTransactionHdWallet
+     */
+    public function transactionApiOmniLayerNewTransactionHdWallet() {
+
+        $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\TransactionAPI\\NewTransactionHdWallet';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\Layers\OmniLayer\TransactionAPI\SendTransaction
+     */
+    public function transactionApiOmniLayerSendTransaction() {
+
+        $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\TransactionAPI\\SendTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\Layers\OmniLayer\TransactionAPI\SignTransaction
+     */
+    public function transactionApiOmniLayerSignTransaction() {
+
+        $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\TransactionAPI\\SignTransaction';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\Layers\OmniLayer\TransactionAPI\TransactionsBlock
+     */
+    public function transactionApiOmniLayerTransactionBlock() {
+
+        $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\TransactionAPI\\TransactionsBlock';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\Layers\OmniLayer\TransactionAPI\TransactionsPropertyId
+     */
+    public function transactionApiOmniLayerTransactionPropertyId() {
+
+        $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\TransactionAPI\\TransactionsPropertyId';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\Layers\OmniLayer\TransactionAPI\TransactionsTxid
+     */
+    public function transactionApiOmniLayerTransactionTxid() {
+
+        $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\TransactionAPI\\TransactionsTxid';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\Layers\OmniLayer\TransactionAPI\UnconfirmedTransactions
+     */
+    public function transactionApiOmniLayerUnconfirmedTransactions() {
+
+        $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\TransactionAPI\\UnconfirmedTransactions';
+        return $this->getInstance($className);
+    }
 }

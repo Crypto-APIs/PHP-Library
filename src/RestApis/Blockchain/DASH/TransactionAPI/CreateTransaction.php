@@ -17,10 +17,12 @@ class CreateTransaction extends Common {
      * @param Input $inputs
      * @param Output $outputs
      * @param Fee $fee
+     * @param integer $locktime
+     * @param string $data
      * @return \stdClass
      */
 
-    public function create($network, Input $inputs, Output $outputs, Fee $fee)
+    public function create($network, Input $inputs, Output $outputs, Fee $fee, $locktime = null, $data = null)
     {
         $this->network = $network;
         return (new Response(
@@ -29,7 +31,9 @@ class CreateTransaction extends Common {
                 'params' =>  [
                     'inputs' => $inputs->get(),
                     'outputs' => $outputs->get(),
-                    'fee' => $fee->get()
+                    'fee' => $fee->get(),
+                    'locktime' => $locktime,
+                    'data' => $data
                 ]
             ])
         ))->get();

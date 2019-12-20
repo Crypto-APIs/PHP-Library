@@ -20,7 +20,7 @@ class TransferTokens extends Common {
      * @param $token double
      * @return \stdClass
      */
-    public function get($network, $fromAddress, $toAddress, $contract, $password, $gasPrice, $gasLimit, $token)
+    public function transferWithPass($network, $fromAddress, $toAddress, $contract, $password, $gasPrice, $gasLimit, $token)
     {
         $this->network = $network;
 
@@ -41,6 +41,40 @@ class TransferTokens extends Common {
             ])
         ))->get();
     }
+
+    /**
+     * @param $network string
+     * @param $fromAddress string
+     * @param $toAddress string
+     * @param $contract string
+     * @param $privateKey string
+     * @param $gasPrice int
+     * @param $gasLimit int
+     * @param $token double
+     * @return \stdClass
+     */
+    public function transferWithPvtKey($network, $fromAddress, $toAddress, $contract, $privateKey, $gasPrice, $gasLimit, $token)
+    {
+        $this->network = $network;
+
+        $params = [
+            'fromAddress' => $fromAddress,
+            'toAddress' => $toAddress,
+            'contract' => $contract,
+            'privateKey' => $privateKey,
+            'gasPrice' => $gasPrice,
+            'gasLimit' => $gasLimit,
+            'token' => $token
+        ];
+
+        return (new Response(
+            $this->request([
+                'method' => 'POST',
+                'params' => $params
+            ])
+        ))->get();
+    }
+
 
     protected function getEndPoint()
     {

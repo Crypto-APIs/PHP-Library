@@ -147,6 +147,11 @@ $allCurrentRatesInExchange = $instance->allCurrentRatesInExchange()->get();
 $arbitrage = $instance->arbitrage()->get();
 
 /*
+ * https://docs.cryptoapis.io/rest-apis/crypto-market-data-apis/index#order-book-snapshot-by-symbol
+ */
+$arbitrage = $instance->snapshotBySymbol()->get('SYMBOL_ID_STRING');
+
+/*
  * https://docs.cryptoapis.io/#btc-blockchain-chain-endpoint
  */
  
@@ -187,6 +192,18 @@ $info = $instance->blockChainApiBtcChain()->get(Constants::$BTC_TESTNET);
  * $result = $instance->addressApiBtcAddressTransactions()->get(Constants::$BTC_TESTNET,'mtFYoSowT3i649wnBDYjCjewenh8AuofQb');
  */
 
+/*
+ * https://docs.cryptoapis.io/#btc-address-transactions-endpoint
+ * 
+ * $addresses = [
+               "2MuLVwmhmxM6RzNBZ347sW9xyRtJoHf8v77",
+               "n3jYBjCzgGNydQwf83Hz6GBzGBhMkKfgL1",
+               "2NDhzMt2D9ZxXapbuq567WGeWP7NuDN81cg"
+               ]
+ * 
+ * 
+ * $result = $instance->addressApiBtcMultipleAddressesInfo()->get(Constants::$BTC_TESTNET, $addresses);
+ */
 
 
 /*
@@ -227,6 +244,26 @@ $info = $instance->blockChainApiBtcChain()->get(Constants::$BTC_TESTNET);
  * https://docs.cryptoapis.io/#btc-wallet-delete-wallet-endpoint
  * $result = $instance->walletApiBtcDeleteWallet()->delete(Constants::$BTC_TESTNET,'testWalletName');
  * $result = $instance->walletApiBtcDeleteWallet()->deleteHd(Constants::$BTC_TESTNET,'testWalletName');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/btc/index#btc-create-xpub-endpoint
+ * $result = $instance->walletApiBtcCreateXPub()->create(Constants::$BTC_TESTNET, $password);
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/btc/index#btc-get-pub-addresses-endpoint
+ * $result = $instance->walletApiBtcGetPublicExtendedKeyAddresses()->get($network, $xpub, $index, $limit, $type, $script);
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/btc/index#btc-get-pub-addresses-transactions-endpoint
+ * $result = $instance->walletApiBtcGetExtendedPublicKeyTxs()->get($network, $xpub, $index, $limit, $type, $script);
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/btc/index#btc-wallet-import-wallet-endpoint
+ * $result = $instance->walletApiBtcImportAddressAsWallet()->import($network, $walletName, $password, $privateKey, $address);
  */
 
 /*
@@ -318,6 +355,35 @@ $result = $instance->transactionApiBtcNewTransactionHdWallet()->create(Constants
  * $result = $instance->transactionApiBtcNewTransactionFee()->get(Constants::$BTC_TESTNET);
  */
 
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/btc/index#btc-refund-transaction
+ * $result = $instance->transactionApiBtcRefundTransaction()->refund(Constants::$BTC_TESTNET, $txId, $wif);
+ */
+
+
+/* Only for ETH
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/eth/index#eth-internal-transactions-endpoint
+ * $result = $instance->transactionApiEthInternalTransactions()->get(Constants::$ETH_ROPSTEN, $txHash, $limit);
+ */
+
+/*BTC based 
+ *https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/btc/index#btc-transactions-size
+
+
+
+$inputs = new \RestApis\Blockchain\BTC\Snippets\Input();
+$inputs->add('mtFYoSowT3i649wnBDYjCjewenh8AuofQb', 0.0004);
+$inputs->add('mn6GtNFRPwXtW7xJqH8Afck7FbVoRi6NF1',0.00018);
+
+$outputs = new \RestApis\Blockchain\BTC\Snippets\Output();
+$outputs->add('mrnWMV41vXivQX9yiY9ACSK5uPo3TfJdv9', 0.0004);
+
+$fee = new \RestApis\Blockchain\BTC\Snippets\Fee();
+$fee->set(0.00023141);
+
+$result = $instance->transactionApiBtcTransactionSize()->calculate(Constants::$BTC_TESTNET, $inputs, $outputs, $fee);
+
+ */
 
 /*
  * https://docs.cryptoapis.io/#btc-payment-forwarding-create-payment-endpoint
@@ -370,6 +436,10 @@ $result = $instance->transactionApiBtcNewTransactionHdWallet()->create(Constants
  * $result = $instance->webhookBtcDeleteWebhooks()->delete(Constants::$BTC_TESTNET, 'UUID');
  */
 
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/btc/index#btc-webhooks-delete-all-webhooks-endpoint
+ * $result = $instance->webhookBtcDeleteAllWebhooks()->delete(Constants::$BTC_TESTNET');
+ */
 
 /*
  * https://docs.cryptoapis.io/rest-apis/trading-apis/exchange-accounts/index#create-account

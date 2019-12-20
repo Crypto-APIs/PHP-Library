@@ -28,7 +28,7 @@ class LocalSignTransaction extends Common {
         ];
         return (new Response(
             $this->request([
-                'method' => 'GET',
+                'method' => 'POST',
                 'params' => $params
             ])
         ))->get();

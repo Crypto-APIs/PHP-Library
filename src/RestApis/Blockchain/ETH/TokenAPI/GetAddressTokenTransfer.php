@@ -30,7 +30,7 @@ class GetAddressTokenTransfer extends Common {
 
         return (new Response(
             $this->request([
-                'method' => 'POST',
+                'method' => 'GET',
                 'params' => $params
             ])
         ))->get();
