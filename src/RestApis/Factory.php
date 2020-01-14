@@ -378,98 +378,98 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\BTC\TransactionApi\TransactionsTxid
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\TransactionsTxid
      */
     public function transactionApiBtcTransactionsTxid() {
 
-        $className = 'RestApis\\Blockchain\\BTC\\TransactionApi\\TransactionsTxid';
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\TransactionsTxid';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BTC\TransactionApi\TransactionsBlock
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\TransactionsBlock
      */
     public function transactionApiBtcTransactionsBlock() {
 
-        $className = 'RestApis\\Blockchain\\BTC\\TransactionApi\\TransactionsBlock';
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\TransactionsBlock';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BTC\TransactionApi\UnconfirmedTransactions
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\UnconfirmedTransactions
      */
     public function transactionApiBtcUnconfirmedTransactions() {
 
-        $className = 'RestApis\\Blockchain\\BTC\\TransactionApi\\UnconfirmedTransactions';
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\UnconfirmedTransactions';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BTC\TransactionApi\DecodeRawTransaction
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\DecodeRawTransaction
      */
     public function transactionApiBtcDecodeRawTransaction() {
 
-        $className = 'RestApis\\Blockchain\\BTC\\TransactionApi\\DecodeRawTransaction';
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\DecodeRawTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BTC\TransactionApi\CreateTransaction
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\CreateTransaction
      */
     public function transactionApiBtcCreateTransaction() {
 
-        $className = 'RestApis\\Blockchain\\BTC\\TransactionApi\\CreateTransaction';
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\CreateTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BTC\TransactionApi\SignTransaction
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\SignTransaction
      */
     public function transactionApiBtcSignTransaction() {
 
-        $className = 'RestApis\\Blockchain\\BTC\\TransactionApi\\SignTransaction';
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\SignTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BTC\TransactionApi\SendTransaction
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\SendTransaction
      */
     public function transactionApiBtcSendTransaction() {
 
-        $className = 'RestApis\\Blockchain\\BTC\\TransactionApi\\SendTransaction';
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\SendTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BTC\TransactionApi\NewTransaction
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\NewTransaction
      */
     public function transactionApiBtcNewTransaction() {
 
-        $className = 'RestApis\\Blockchain\\BTC\\TransactionApi\\NewTransaction';
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\NewTransaction';
         return $this->getInstance($className);
     }
 
 
     /**
-     * @return \RestApis\Blockchain\BTC\TransactionApi\NewTransactionHdWallet
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\NewTransactionHdWallet
      */
     public function transactionApiBtcNewTransactionHdWallet() {
 
-        $className = 'RestApis\\Blockchain\\BTC\\TransactionApi\\NewTransactionHdWallet';
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\NewTransactionHdWallet';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BTC\TransactionApi\TransactionsFee
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\TransactionsFee
      */
     public function transactionApiBtcNewTransactionFee() {
 
-        $className = 'RestApis\\Blockchain\\BTC\\TransactionApi\\TransactionsFee';
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\TransactionsFee';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BTC\TransactionApi\TransactionSize
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\TransactionSize
      */
     public function transactionApiBtcTransactionSize() {
 
@@ -478,7 +478,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\BTC\TransactionApi\RefundTransaction
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\RefundTransaction
      */
     public function transactionApiBtcRefundTransaction() {
 
@@ -773,98 +773,98 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\LTC\TransactionApi\TransactionsTxid
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\TransactionsTxid
      */
     public function transactionApiLtcTransactionsTxid() {
 
-        $className = 'RestApis\\Blockchain\\LTC\\TransactionApi\\TransactionsTxid';
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\TransactionsTxid';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\LTC\TransactionApi\TransactionsBlock
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\TransactionsBlock
      */
     public function transactionApiLtcTransactionsBlock() {
 
-        $className = 'RestApis\\Blockchain\\LTC\\TransactionApi\\TransactionsBlock';
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\TransactionsBlock';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\LTC\TransactionApi\UnconfirmedTransactions
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\UnconfirmedTransactions
      */
     public function transactionApiLtcUnconfirmedTransactions() {
 
-        $className = 'RestApis\\Blockchain\\LTC\\TransactionApi\\UnconfirmedTransactions';
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\UnconfirmedTransactions';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\LTC\TransactionApi\DecodeRawTransaction
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\DecodeRawTransaction
      */
     public function transactionApiLtcDecodeRawTransaction() {
 
-        $className = 'RestApis\\Blockchain\\LTC\\TransactionApi\\DecodeRawTransaction';
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\DecodeRawTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\LTC\TransactionApi\CreateTransaction
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\CreateTransaction
      */
     public function transactionApiLtcCreateTransaction() {
 
-        $className = 'RestApis\\Blockchain\\LTC\\TransactionApi\\CreateTransaction';
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\CreateTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\LTC\TransactionApi\SignTransaction
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\SignTransaction
      */
     public function transactionApiLtcSignTransaction() {
 
-        $className = 'RestApis\\Blockchain\\LTC\\TransactionApi\\SignTransaction';
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\SignTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\LTC\TransactionApi\SendTransaction
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\SendTransaction
      */
     public function transactionApiLtcSendTransaction() {
 
-        $className = 'RestApis\\Blockchain\\LTC\\TransactionApi\\SendTransaction';
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\SendTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\LTC\TransactionApi\NewTransaction
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\NewTransaction
      */
     public function transactionApiLtcNewTransaction() {
 
-        $className = 'RestApis\\Blockchain\\LTC\\TransactionApi\\NewTransaction';
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\NewTransaction';
         return $this->getInstance($className);
     }
 
 
     /**
-     * @return \RestApis\Blockchain\LTC\TransactionApi\NewTransactionHdWallet
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\NewTransactionHdWallet
      */
     public function transactionApiLtcNewTransactionHdWallet() {
 
-        $className = 'RestApis\\Blockchain\\LTC\\TransactionApi\\NewTransactionHdWallet';
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\NewTransactionHdWallet';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\LTC\TransactionApi\TransactionsFee
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\TransactionsFee
      */
     public function transactionApiLtcNewTransactionFee() {
 
-        $className = 'RestApis\\Blockchain\\LTC\\TransactionApi\\TransactionsFee';
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\TransactionsFee';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\LTC\TransactionApi\TransactionSize
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\TransactionSize
      */
     public function transactionApiLtcTransactionSize() {
 
@@ -873,7 +873,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\LTC\TransactionApi\RefundTransaction
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\RefundTransaction
      */
     public function transactionApiLtcRefundTransaction() {
 
@@ -1166,98 +1166,98 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\BCH\TransactionApi\TransactionsTxid
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\TransactionsTxid
      */
     public function transactionApiBchTransactionsTxid() {
 
-        $className = 'RestApis\\Blockchain\\BCH\\TransactionApi\\TransactionsTxid';
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\TransactionsTxid';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BCH\TransactionApi\TransactionsBlock
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\TransactionsBlock
      */
     public function transactionApiBchTransactionsBlock() {
 
-        $className = 'RestApis\\Blockchain\\BCH\\TransactionApi\\TransactionsBlock';
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\TransactionsBlock';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BCH\TransactionApi\UnconfirmedTransactions
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\UnconfirmedTransactions
      */
     public function transactionApiBchUnconfirmedTransactions() {
 
-        $className = 'RestApis\\Blockchain\\BCH\\TransactionApi\\UnconfirmedTransactions';
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\UnconfirmedTransactions';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BCH\TransactionApi\DecodeRawTransaction
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\DecodeRawTransaction
      */
     public function transactionApiBchDecodeRawTransaction() {
 
-        $className = 'RestApis\\Blockchain\\BCH\\TransactionApi\\DecodeRawTransaction';
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\DecodeRawTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BCH\TransactionApi\CreateTransaction
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\CreateTransaction
      */
     public function transactionApiBchCreateTransaction() {
 
-        $className = 'RestApis\\Blockchain\\BCH\\TransactionApi\\CreateTransaction';
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\CreateTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BCH\TransactionApi\SignTransaction
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\SignTransaction
      */
     public function transactionApiBchSignTransaction() {
 
-        $className = 'RestApis\\Blockchain\\BCH\\TransactionApi\\SignTransaction';
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\SignTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BCH\TransactionApi\SendTransaction
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\SendTransaction
      */
     public function transactionApiBchSendTransaction() {
 
-        $className = 'RestApis\\Blockchain\\BCH\\TransactionApi\\SendTransaction';
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\SendTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BCH\TransactionApi\NewTransaction
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\NewTransaction
      */
     public function transactionApiBchNewTransaction() {
 
-        $className = 'RestApis\\Blockchain\\BCH\\TransactionApi\\NewTransaction';
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\NewTransaction';
         return $this->getInstance($className);
     }
 
 
     /**
-     * @return \RestApis\Blockchain\BCH\TransactionApi\NewTransactionHdWallet
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\NewTransactionHdWallet
      */
     public function transactionApiBchNewTransactionHdWallet() {
 
-        $className = 'RestApis\\Blockchain\\BCH\\TransactionApi\\NewTransactionHdWallet';
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\NewTransactionHdWallet';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BCH\TransactionApi\TransactionsFee
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\TransactionsFee
      */
     public function transactionApiBchNewTransactionFee() {
 
-        $className = 'RestApis\\Blockchain\\BCH\\TransactionApi\\TransactionsFee';
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\TransactionsFee';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\BCH\TransactionApi\TransactionSize
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\TransactionSize
      */
     public function transactionApiBchTransactionSize() {
 
@@ -1266,7 +1266,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\BCH\TransactionApi\RefundTransaction
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\RefundTransaction
      */
     public function transactionApiBchRefundTransaction() {
 
@@ -1563,98 +1563,98 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\DOGE\TransactionApi\TransactionsTxid
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\TransactionsTxid
      */
     public function transactionApiDogeTransactionsTxid() {
 
-        $className = 'RestApis\\Blockchain\\DOGE\\TransactionApi\\TransactionsTxid';
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\TransactionsTxid';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DOGE\TransactionApi\TransactionsBlock
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\TransactionsBlock
      */
     public function transactionApiDogeTransactionsBlock() {
 
-        $className = 'RestApis\\Blockchain\\DOGE\\TransactionApi\\TransactionsBlock';
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\TransactionsBlock';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DOGE\TransactionApi\UnconfirmedTransactions
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\UnconfirmedTransactions
      */
     public function transactionApiDogeUnconfirmedTransactions() {
 
-        $className = 'RestApis\\Blockchain\\DOGE\\TransactionApi\\UnconfirmedTransactions';
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\UnconfirmedTransactions';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DOGE\TransactionApi\DecodeRawTransaction
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\DecodeRawTransaction
      */
     public function transactionApiDogeDecodeRawTransaction() {
 
-        $className = 'RestApis\\Blockchain\\DOGE\\TransactionApi\\DecodeRawTransaction';
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\DecodeRawTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DOGE\TransactionApi\CreateTransaction
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\CreateTransaction
      */
     public function transactionApiDogeCreateTransaction() {
 
-        $className = 'RestApis\\Blockchain\\DOGE\\TransactionApi\\CreateTransaction';
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\CreateTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DOGE\TransactionApi\SignTransaction
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\SignTransaction
      */
     public function transactionApiDogeSignTransaction() {
 
-        $className = 'RestApis\\Blockchain\\DOGE\\TransactionApi\\SignTransaction';
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\SignTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DOGE\TransactionApi\SendTransaction
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\SendTransaction
      */
     public function transactionApiDogeSendTransaction() {
 
-        $className = 'RestApis\\Blockchain\\DOGE\\TransactionApi\\SendTransaction';
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\SendTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DOGE\TransactionApi\NewTransaction
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\NewTransaction
      */
     public function transactionApiDogeNewTransaction() {
 
-        $className = 'RestApis\\Blockchain\\DOGE\\TransactionApi\\NewTransaction';
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\NewTransaction';
         return $this->getInstance($className);
     }
 
 
     /**
-     * @return \RestApis\Blockchain\DOGE\TransactionApi\NewTransactionHdWallet
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\NewTransactionHdWallet
      */
     public function transactionApiDogeNewTransactionHdWallet() {
 
-        $className = 'RestApis\\Blockchain\\DOGE\\TransactionApi\\NewTransactionHdWallet';
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\NewTransactionHdWallet';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DOGE\TransactionApi\TransactionsFee
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\TransactionsFee
      */
     public function transactionApiDogeNewTransactionFee() {
 
-        $className = 'RestApis\\Blockchain\\DOGE\\TransactionApi\\TransactionsFee';
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\TransactionsFee';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DOGE\TransactionApi\TransactionSize
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\TransactionSize
      */
     public function transactionApiDogeTransactionSize() {
 
@@ -1663,7 +1663,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\DOGE\TransactionApi\RefundTransaction
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\RefundTransaction
      */
     public function transactionApiDogeRefundTransaction() {
 
@@ -1960,98 +1960,98 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\DASH\TransactionApi\TransactionsTxid
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\TransactionsTxid
      */
     public function transactionApiDashTransactionsTxid() {
 
-        $className = 'RestApis\\Blockchain\\DASH\\TransactionApi\\TransactionsTxid';
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\TransactionsTxid';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DASH\TransactionApi\TransactionsBlock
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\TransactionsBlock
      */
     public function transactionApiDashTransactionsBlock() {
 
-        $className = 'RestApis\\Blockchain\\DASH\\TransactionApi\\TransactionsBlock';
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\TransactionsBlock';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DASH\TransactionApi\UnconfirmedTransactions
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\UnconfirmedTransactions
      */
     public function transactionApiDashUnconfirmedTransactions() {
 
-        $className = 'RestApis\\Blockchain\\DASH\\TransactionApi\\UnconfirmedTransactions';
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\UnconfirmedTransactions';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DASH\TransactionApi\DecodeRawTransaction
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\DecodeRawTransaction
      */
     public function transactionApiDashDecodeRawTransaction() {
 
-        $className = 'RestApis\\Blockchain\\DASH\\TransactionApi\\DecodeRawTransaction';
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\DecodeRawTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DASH\TransactionApi\CreateTransaction
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\CreateTransaction
      */
     public function transactionApiDashCreateTransaction() {
 
-        $className = 'RestApis\\Blockchain\\DASH\\TransactionApi\\CreateTransaction';
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\CreateTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DASH\TransactionApi\SignTransaction
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\SignTransaction
      */
     public function transactionApiDashSignTransaction() {
 
-        $className = 'RestApis\\Blockchain\\DASH\\TransactionApi\\SignTransaction';
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\SignTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DASH\TransactionApi\SendTransaction
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\SendTransaction
      */
     public function transactionApiDashSendTransaction() {
 
-        $className = 'RestApis\\Blockchain\\DASH\\TransactionApi\\SendTransaction';
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\SendTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DASH\TransactionApi\NewTransaction
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\NewTransaction
      */
     public function transactionApiDashNewTransaction() {
 
-        $className = 'RestApis\\Blockchain\\DASH\\TransactionApi\\NewTransaction';
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\NewTransaction';
         return $this->getInstance($className);
     }
 
 
     /**
-     * @return \RestApis\Blockchain\DASH\TransactionApi\NewTransactionHdWallet
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\NewTransactionHdWallet
      */
     public function transactionApiDashNewTransactionHdWallet() {
 
-        $className = 'RestApis\\Blockchain\\DASH\\TransactionApi\\NewTransactionHdWallet';
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\NewTransactionHdWallet';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DASH\TransactionApi\TransactionsFee
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\TransactionsFee
      */
     public function transactionApiDashNewTransactionFee() {
 
-        $className = 'RestApis\\Blockchain\\DASH\\TransactionApi\\TransactionsFee';
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\TransactionsFee';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\DASH\TransactionApi\TransactionSize
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\TransactionSize
      */
     public function transactionApiDashTransactionSize() {
 
@@ -2060,7 +2060,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\DASH\TransactionApi\RefundTransaction
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\RefundTransaction
      */
     public function transactionApiDashRefundTransaction() {
 
@@ -2263,95 +2263,95 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\TransactionsHash
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\TransactionsHash
      */
     public function transactionApiEthTransactionHash() {
-        $className = 'RestApis\\Blockchain\\ETH\\TransactionApi\\TransactionsHash';
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\TransactionsHash';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\TransactionsIndexByIndex
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\TransactionsIndexByIndex
      */
     public function transactionApiEthTransactionsIndexByIndex() {
-        $className = 'RestApis\\Blockchain\\ETH\\TransactionApi\\TransactionsIndexByIndex';
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\TransactionsIndexByIndex';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\TransactionsIndexByBlockNumber
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\TransactionsIndexByBlockNumber
      */
     public function transactionApiEthTransactionsIndexByBlockNumber() {
-        $className = 'RestApis\\Blockchain\\ETH\\TransactionApi\\TransactionsIndexByBlockNumber';
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\TransactionsIndexByBlockNumber';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\TransactionsIndexByBlockHash
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\TransactionsIndexByBlockHash
      */
     public function transactionApiEthTransactionsIndexByBlockHash() {
-        $className = 'RestApis\\Blockchain\\ETH\\TransactionApi\\TransactionsIndexByBlockHash';
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\TransactionsIndexByBlockHash';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\CreateTransaction
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\CreateTransaction
      */
     public function transactionApiEthCreateTransaction() {
-        $className = 'RestApis\\Blockchain\\ETH\\TransactionApi\\CreateTransaction';
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\CreateTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\LocalSignTransaction
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\LocalSignTransaction
      */
     public function transactionApiEthLocalSignTransaction() {
-        $className = 'RestApis\\Blockchain\\ETH\\TransactionApi\\LocalSignTransaction';
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\LocalSignTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\PushRawTransaction
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\PushRawTransaction
      */
     public function transactionApiEthPushRawTransaction() {
-        $className = 'RestApis\\Blockchain\\ETH\\TransactionApi\\PushRawTransaction';
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\PushRawTransaction';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\EstimateTransactionGas
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\EstimateTransactionGas
      */
     public function transactionApiEthEstimateTransactionGas() {
-        $className = 'RestApis\\Blockchain\\ETH\\TransactionApi\\EstimateGasSmartContract';
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\EstimateGasSmartContract';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\PendingTransactions
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\PendingTransactions
      */
     public function transactionApiEthPendingTransactions() {
-        $className = 'RestApis\\Blockchain\\ETH\\TransactionApi\\PendingTransactions';
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\PendingTransactions';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\QueuedTransactions
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\QueuedTransactions
      */
     public function transactionApiEthQueuedTransactions() {
-        $className = 'RestApis\\Blockchain\\ETH\\TransactionApi\\QueuedTransactions';
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\QueuedTransactions';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\TransactionsFee
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\TransactionsFee
      */
     public function transactionApiEthTransactionFee() {
-        $className = 'RestApis\\Blockchain\\ETH\\TransactionApi\\TransactionsFee';
+        $className = 'RestApis\\Blockchain\\ETH\\TransactionAPI\\TransactionsFee';
         return $this->getInstance($className);
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\RefundTransaction
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\RefundTransaction
      */
     public function transactionApiEthRefundTransaction() {
 
@@ -2360,7 +2360,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETH\TransactionApi\InternalTransactions
+     * @return \RestApis\Blockchain\ETH\TransactionAPI\InternalTransactions
      */
     public function transactionApiEthInternalTransactions() {
 
@@ -2650,7 +2650,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETC\TransactionApi\TransactionsHash
+     * @return \RestApis\Blockchain\ETC\TransactionAPI\TransactionsHash
      */
     public function transactionApiEtcTransactionHash() {
         $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\TransactionsHash';
@@ -2658,7 +2658,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETC\TransactionApi\TransactionsIndexByIndex
+     * @return \RestApis\Blockchain\ETC\TransactionAPI\TransactionsIndexByIndex
      */
     public function transactionApiEtcTransactionsIndexByIndex() {
         $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\TransactionsIndexByIndex';
@@ -2666,7 +2666,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETC\TransactionApi\TransactionsIndexByBlockNumber
+     * @return \RestApis\Blockchain\ETC\TransactionAPI\TransactionsIndexByBlockNumber
      */
     public function transactionApiEtcTransactionsIndexByBlockNumber() {
         $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\TransactionsIndexByBlockNumber';
@@ -2674,7 +2674,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETC\TransactionApi\TransactionsIndexByBlockHash
+     * @return \RestApis\Blockchain\ETC\TransactionAPI\TransactionsIndexByBlockHash
      */
     public function transactionApiEtcTransactionsIndexByBlockHash() {
         $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\TransactionsIndexByBlockHash';
@@ -2682,7 +2682,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETC\TransactionApi\CreateTransaction
+     * @return \RestApis\Blockchain\ETC\TransactionAPI\CreateTransaction
      */
     public function transactionApiEtcCreateTransaction() {
         $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\CreateTransaction';
@@ -2690,7 +2690,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETC\TransactionApi\LocalSignTransaction
+     * @return \RestApis\Blockchain\ETC\TransactionAPI\LocalSignTransaction
      */
     public function transactionApiEtcLocalSignTransaction() {
         $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\LocalSignTransaction';
@@ -2698,7 +2698,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETC\TransactionApi\PushRawTransaction
+     * @return \RestApis\Blockchain\ETC\TransactionAPI\PushRawTransaction
      */
     public function transactionApiEtcPushRawTransaction() {
         $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\PushRawTransaction';
@@ -2706,7 +2706,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETC\TransactionApi\PendingTransactions
+     * @return \RestApis\Blockchain\ETC\TransactionAPI\PendingTransactions
      */
     public function transactionApiEtcPendingTransactions() {
         $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\PendingTransactions';
@@ -2714,7 +2714,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETC\TransactionApi\QueuedTransactions
+     * @return \RestApis\Blockchain\ETC\TransactionAPI\QueuedTransactions
      */
     public function transactionApiEtcQueuedTransactions() {
         $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\QueuedTransactions';
@@ -2722,7 +2722,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETC\TransactionApi\TransactionsFee
+     * @return \RestApis\Blockchain\ETC\TransactionAPI\TransactionsFee
      */
     public function transactionApiEtcTransactionFee() {
         $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\TransactionsFee';
@@ -2730,7 +2730,7 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETC\TransactionApi\RefundTransaction
+     * @return \RestApis\Blockchain\ETC\TransactionAPI\RefundTransaction
      */
     public function transactionApiEtcRefundTransaction() {
 
@@ -2739,10 +2739,10 @@ class Factory
     }
 
     /**
-     * @return \RestApis\Blockchain\ETC\TransactionApi\EstimateTransactionGas
+     * @return \RestApis\Blockchain\ETC\TransactionAPI\EstimateTransactionGas
      */
     public function transactionApiEtcEstimateTransactionGas() {
-        $className = 'RestApis\\Blockchain\\ETC\\TransactionApi\\EstimateGasSmartContract';
+        $className = 'RestApis\\Blockchain\\ETC\\TransactionAPI\\EstimateGasSmartContract';
         return $this->getInstance($className);
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace RestApis\Blockchain\DOGE\TransactionApi;
+namespace RestApis\Blockchain\DOGE\TransactionAPI;
 
 use Common\Response;
 use RestApis\Blockchain\DOGE\Common;
