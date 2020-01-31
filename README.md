@@ -482,6 +482,11 @@ $result = $instance->transactionApiBtcTransactionSize()->calculate(Constants::$B
  */
 
 /*
+ * https://docs.cryptoapis.io/rest-apis/trading-apis/private-apis/index#symbols
+ * $result = $instance->tradingApisPrivate()->getSymbols('ebf4cbbf-3759-4b63-84c1-01bcf508317c');
+ */
+
+/*
  * https://docs.cryptoapis.io/rest-apis/trading-apis/private-apis/index#get-deposit-address
  * $result = $instance->tradingApisPrivate()->getDepositAddress('ebf4cbbf-3759-4b63-84c1-01bcf508317c','dasd');
  */

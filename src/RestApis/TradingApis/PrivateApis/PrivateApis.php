@@ -44,6 +44,20 @@ class PrivateApis extends Request {
         ))->get();
     }
 
+    /**
+     * @param string $account_id
+     * @return \stdClass
+     */
+    public function getSymbols($account_id)
+    {
+        return (new Response(
+            $this->request([
+                'method' => 'GET',
+                'params' => []
+            ],
+                $this->getEndPoint() . '/' . $account_id . '/symbols')
+        ))->get();
+    }
 
     /**
      * @param string $account_id
