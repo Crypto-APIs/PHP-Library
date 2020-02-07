@@ -18,9 +18,10 @@ class TransferTokens extends Common {
      * @param $gasPrice int
      * @param $gasLimit int
      * @param $token double
+     * @param $nonce int
      * @return \stdClass
      */
-    public function transferWithPass($network, $fromAddress, $toAddress, $contract, $password, $gasPrice, $gasLimit, $token)
+    public function transferWithPass($network, $fromAddress, $toAddress, $contract, $password, $gasPrice, $gasLimit, $token, $nonce = null)
     {
         $this->network = $network;
 
@@ -33,6 +34,10 @@ class TransferTokens extends Common {
             'gasLimit' => $gasLimit,
             'token' => $token
         ];
+
+        if(!is_null($nonce)) {
+            $params['nonce'] = $nonce;
+        }
 
         return (new Response(
             $this->request([
@@ -51,9 +56,10 @@ class TransferTokens extends Common {
      * @param $gasPrice int
      * @param $gasLimit int
      * @param $token double
+     * @param $nonce int
      * @return \stdClass
      */
-    public function transferWithPvtKey($network, $fromAddress, $toAddress, $contract, $privateKey, $gasPrice, $gasLimit, $token)
+    public function transferWithPvtKey($network, $fromAddress, $toAddress, $contract, $privateKey, $gasPrice, $gasLimit, $token, $nonce = null)
     {
         $this->network = $network;
 
@@ -66,6 +72,10 @@ class TransferTokens extends Common {
             'gasLimit' => $gasLimit,
             'token' => $token
         ];
+
+        if(!is_null($nonce)) {
+            $params['nonce'] = $nonce;
+        }
 
         return (new Response(
             $this->request([
