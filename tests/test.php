@@ -402,6 +402,62 @@ $result = $instance->transactionApiBtcNewTransactionHdWallet()->create(Constants
  */
 
 
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/btc/index#btc-address-unconfirmed-transactions-endpoint
+ * $result = $instance->addressApiBtcUnconfirmedTransactions()->get(Constants::$BTC_TESTNET,'XeBZBM6V6KKgPGcuqJThPbohU8DjY823Mm');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/bch/index#bch-address-unconfirmed-transactions-endpoint
+ * $result = $instance->addressApiBchUnconfirmedTransactions()->get(Constants::$BCH_TESTNET,'bchtest:qpfnjptddkqmqd6nxjt64dh7ntyxhdruyufqymvd5p');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/dash/index#dash-address-unconfirmed-transactions-endpoint
+ * $result = $instance->addressApiDashUnconfirmedTransactions()->get(Constants::$DASH_MAINNET,'XeBZBM6V6KKgPGcuqJThPbohU8DjY823Mm');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/doge/index#doge-address-unconfirmed-transactions-endpoint
+ * $result = $instance->addressApiDogeUnconfirmedTransactions()->get(Constants::$DOGE_MAINNET,'9sNEXzQciK5rrakA7GFMBGwMcLd7x1kNSN');
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/btc/index#btc-hd-wallet-transactions-size
+    $outputs = new \RestApis\Blockchain\BTC\Snippets\Output();
+    $outputs->add('mrnWMV41vXivQX9yiY9ACSK5uPo3TfJdv9', 0.0004);
+
+    $fee = new \RestApis\Blockchain\BTC\Snippets\Fee();
+    $fee->set(0.00023141);
+    $result = $instance->transactionApiBtcTransactionSizeForHDWallet()->calculate(...);
+*/
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/bch/index#bch-hd-wallet-transactions-size
+ * $result = $instance->transactionApiBchTransactionSizeForHDWallet()->calculate(...);
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/dash/index#dash-hd-wallet-transactions-size
+ * $result = $instance->transactionApiDashTransactionSizeForHDWallet()->calculate(...);
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/doge/index#doge-transactions-hdwallet-transactions
+ * $result = $instance->transactionApiDogeTransactionSizeForHDWallet()->calculate(...);
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/ltc/index#ltc-hd-wallet-transactions-size
+ * $result = $instance->transactionApiLtcTransactionSizeForHDWallet()->calculate(...);
+ */
+
+/*
+ * https://docs.cryptoapis.io/rest-apis/blockchain-as-a-service-apis/eth/index#eth-transfer-tokens
+ * $result = $instance->tokenApiEthTokenTransactionsByAddress()->get(Constants::$ETH_MAINNET,'0x', new \RestApis\Blockchain\ETH\Snippets\Erc20());
+ */
+
+
 
 echo '<pre>';
 print_r($result);

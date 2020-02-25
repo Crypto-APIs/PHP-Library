@@ -3009,4 +3009,85 @@ class Factory
         $className = 'RestApis\\Blockchain\\Layers\\OmniLayer\\TransactionAPI\\UnconfirmedTransactions';
         return $this->getInstance($className);
     }
+
+    /**
+     * @return \RestApis\Blockchain\BTC\AddressAPI\UnconfirmedTransactions
+     */
+    public function addressApiBtcUnconfirmedTransactions() {
+
+        $className = 'RestApis\\Blockchain\\BTC\\AddressAPI\\UnconfirmedTransactions';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BCH\AddressAPI\UnconfirmedTransactions
+     */
+    public function addressApiBchUnconfirmedTransactions() {
+
+        $className = 'RestApis\\Blockchain\\BCH\\AddressAPI\\UnconfirmedTransactions';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DASH\AddressAPI\UnconfirmedTransactions
+     */
+    public function addressApiDashUnconfirmedTransactions() {
+
+        $className = 'RestApis\\Blockchain\\DASH\\AddressAPI\\UnconfirmedTransactions';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DOGE\AddressAPI\UnconfirmedTransactions
+     */
+    public function addressApiDogeUnconfirmedTransactions() {
+
+        $className = 'RestApis\\Blockchain\\DOGE\\AddressAPI\\UnconfirmedTransactions';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BTC\TransactionAPI\TransactionSizeForHDWallet
+     */
+    public function transactionApiBtcTransactionSizeForHDWallet() {
+
+        $className = 'RestApis\\Blockchain\\BTC\\TransactionAPI\\TransactionSizeForHDWallet';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\BCH\TransactionAPI\TransactionSizeForHDWallet
+     */
+    public function transactionApiBchTransactionSizeForHDWallet() {
+
+        $className = 'RestApis\\Blockchain\\BCH\\TransactionAPI\\TransactionSizeForHDWallet';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DASH\TransactionAPI\TransactionSizeForHDWallet
+     */
+    public function transactionApiDashTransactionSizeForHDWallet() {
+
+        $className = 'RestApis\\Blockchain\\DASH\\TransactionAPI\\TransactionSizeForHDWallet';
+        return $this->getInstance($className);
+    }
+
+    /**
+     * @return \RestApis\Blockchain\DOGE\TransactionAPI\TransactionSizeForHDWallet
+     */
+    public function transactionApiDogeTransactionSizeForHDWallet() {
+
+        $className = 'RestApis\\Blockchain\\DOGE\\TransactionAPI\\TransactionSizeForHDWallet';
+        return $this->getInstance($className);
+    }
+    /**
+     * @return \RestApis\Blockchain\LTC\TransactionAPI\TransactionSizeForHDWallet
+     */
+    public function transactionApiLtcTransactionSizeForHDWallet() {
+
+        $className = 'RestApis\\Blockchain\\LTC\\TransactionAPI\\TransactionSizeForHDWallet';
+        return $this->getInstance($className);
+    }
+
 }

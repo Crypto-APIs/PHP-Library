@@ -5,24 +5,30 @@ namespace RestApis\Blockchain\BTC\AddressAPI;
 use Common\Response;
 use RestApis\Blockchain\BTC\Common;
 
-class Address extends Common {
+class UnconfirmedTransactions extends Common {
 
     protected $network;
     protected $address;
 
     /**
-     * @param $network string
-     * @param $address string
+     * @param $network
+     * @param $address
+     * @param int $index
+     * @param int $limit
      * @return \stdClass
      * @throws \Exception
      */
 
-    public function get($network, $address)
+    public function get($network, $address, $index = 0, $limit = 50)
     {
         $this->network = $network;
         $this->address = $address;
 
-        $params = [];
+        $params = [
+            'index' => $index,
+            'limit' => $limit
+        ];
+
         return (new Response(
             $this->request([
                 'method' => 'GET',
@@ -33,6 +39,6 @@ class Address extends Common {
 
     protected function getEndPoint()
     {
-        return $this->endpoint . '/' . $this->network . '/address/' . $this->address;
+        return $this->endpoint . '/' . $this->network . '/address/' . $this->address . '/unconfirmed-transactions';
     }
 }

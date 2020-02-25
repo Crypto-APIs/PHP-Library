@@ -4,6 +4,7 @@ namespace RestApis\Blockchain\ETH\TokenAPI;
 
 use Common\Response;
 use RestApis\Blockchain\ETH\Common;
+use RestApis\Blockchain\ETH\Snippets\TokenTypeInterface;
 
 class TokenTransactionsByAddress extends Common {
 
@@ -11,12 +12,15 @@ class TokenTransactionsByAddress extends Common {
     protected $address;
 
     /**
-     * @param $network string
-     * @param $address string
-     * @param null $limit
+     * @param $network
+     * @param $address
+     * @param int $limit
+     * @param TokenTypeInterface|null $type
      * @return \stdClass
+     * @throws \Exception
      */
-    public function get($network, $address, $limit = null)
+
+    public function get($network, $address, $limit = 50, TokenTypeInterface $type = null)
     {
         $this->network = $network;
         $this->address = $address;
@@ -24,6 +28,10 @@ class TokenTransactionsByAddress extends Common {
         $params = [];
         if(!is_null($limit)) {
             $params['limit'] = $limit;
+        }
+
+        if(!is_null($type)) {
+            $params['type'] = $type->get();
         }
 
         return (new Response(
