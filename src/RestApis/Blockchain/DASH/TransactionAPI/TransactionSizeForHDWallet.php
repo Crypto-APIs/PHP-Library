@@ -34,7 +34,7 @@ class TransactionSizeForHDWallet extends Common
                     'password' => $password,
                     'outputs' => $outputs->get(),
                     'locktime' => $locktime,
-                    'fee' => $fee->get(),
+                    'fee' => $fee ? $fee->get() : $fee,
                     'data' => $data
                 ]
             ])

@@ -22,6 +22,10 @@ class Constants {
     public static $ETH_ROPSTEN = 'ropsten';
     public static $ETH_RINKEBY = 'rinkeby';
 
+    public static $ETC_MAINNET = 'mainnet';
+    public static $ETC_MORDOR = 'mordor';
+    public static $ETC_KOTTI = 'kotti';
+
     public static $BTC_WEBHOOK_NEW_BLOCK_EVENT = 'NEW_BLOCK';
     public static $BTC_WEBHOOK_CONFIRMED_TX_EVENT = 'CONFIRMED_TX';
     public static $BTC_WEBHOOK_ADDRESS_EVENT = 'ADDRESS';

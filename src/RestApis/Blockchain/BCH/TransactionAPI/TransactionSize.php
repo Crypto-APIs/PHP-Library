@@ -25,7 +25,7 @@ class TransactionSize extends Common
      * @return \stdClass
      */
 
-    public function calculate($network, Input $inputs, Output $outputs, Fee $fee, $locktime = null, $data = null)
+    public function calculate($network, Input $inputs, Output $outputs, Fee $fee = null, $locktime = null, $data = null)
     {
         $this->network = $network;
         return (new Response(
@@ -34,7 +34,7 @@ class TransactionSize extends Common
                 'params' =>  [
                     'inputs' => $inputs->get(),
                     'outputs' => $outputs->get(),
-                    'fee' => $fee->get(),
+                    'fee' => $fee ? $fee->get() : $fee,
                     'data' => $data,
                     'locktime' => $locktime,
                 ]

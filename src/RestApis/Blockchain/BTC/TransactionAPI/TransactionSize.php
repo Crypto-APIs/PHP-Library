@@ -36,7 +36,7 @@ class TransactionSize extends Common
                     'inputs' => $inputs->get(),
                     'outputs' => $outputs->get(),
                     'locktime' => $locktime,
-                    'fee' => $fee->get(),
+                    'fee' => $fee ? $fee->get() : $fee,
                     'data' => $data,
                     'replaceable' => $replaceable
                 ]
