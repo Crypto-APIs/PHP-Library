@@ -53,7 +53,7 @@ abstract class Request {
             );
             $response = \GuzzleHttp\json_decode($res->getBody()->read($res->getBody()->getSize()));
         } catch (BadResponseException $e) {
-            throw new \Exception($e->getResponse()->getBody()->getContents(), $e->getCode());
+            throw new \Exception($e->getMessage() . ' ' . $e->getResponse()->getBody()->getContents(), $e->getCode());
         }
         return $response;
     }
