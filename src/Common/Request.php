@@ -2,6 +2,7 @@
 namespace Common;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\BadResponseException;
 
 abstract class Request {
 
@@ -51,8 +52,8 @@ abstract class Request {
                 ]
             );
             $response = \GuzzleHttp\json_decode($res->getBody()->read($res->getBody()->getSize()));
-        } catch (\Exception $e) {
-            throw new \Exception($e->getMessage(), $e->getCode());
+        } catch (BadResponseException $e) {
+            throw new \Exception($e->getResponse()->getBody()->getContents(), $e->getCode());
         }
         return $response;
     }
